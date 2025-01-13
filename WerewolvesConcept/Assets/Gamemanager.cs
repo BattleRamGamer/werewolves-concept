@@ -17,6 +17,8 @@ public class Gamemanager : MonoBehaviour
 
     [SerializeField]
     private TextMeshProUGUI roleShower;
+    [SerializeField]
+    private TextMeshProUGUI roleShower2;
 
     public static Gamemanager gm {  get; private set; }
 
@@ -48,6 +50,8 @@ public class Gamemanager : MonoBehaviour
     {
         role = roleName;
         roleShower.text = "Role: " + role;
+
+        roleShower2.text = "Code: " + role;
     }
 
     public void ChangeScene(int sceneNr)
